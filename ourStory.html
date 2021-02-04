@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="title" content="Our Story">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="OurStory\ourStory.css">
+        <link rel="stylesheet" href="hamburger.css">  <!-- Copied hamburger menu icon from https://css-tricks.com/line-animated-hamburger-menu -->
+        <link rel="stylesheet" href="dropdown.css">
+        <link rel="stylesheet" href="OurStory\stories.css">
+    </head>
+    <body>
+        <nav>
+            <div class="navBlock" style="position: relative; top: -8%;">
+                <!-- Snagged from the website listed above -->
+                <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')); document.getElementById('dropdownMenu').classList.toggle('show');" aria-label="Main Menu">
+                    <svg class="hamburguesa" viewBox="0 0 100 100">
+                        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+                <div id="dropdownMenu" class="dropdown-content">
+                    <a href="rsvp.html">RSVP</a>
+                    <div class="menuDivider"></div>
+                    <a href="ourStory.html">Our Story</a>
+                    <div class="menuDivider"></div>
+                    <a href="ourWhy.html">Our Why</a>
+                    <div class="menuDivider"></div>
+                    <a href="weddingParty.html">Wedding Party</a>
+                    <div class="menuDivider"></div>
+                    <a href="registry.html">Registry</a>
+                    <div class="menuDivider"></div>
+                    <a href="pictures.html">Pictures</a>
+                </div>
+            </div>
+
+            <div class="navBlock">Luke and Ede</div>
+
+            <div class="navBlock">
+                <a href="index.html"><img src="twoRings.svg" class="homeLogo"/></a>
+            </div>
+        </nav>
+
+        <main>
+            <div class="lukede-container">
+                <div class="meeting">
+                    <div class="story-container">
+                        <div class="story-slides">
+                            <input type="radio" name="selector1" id="r1" checked>
+                            <input type="radio" name="selector1" id="r2">
+                            <input type="radio" name="selector1" id="r3">
+                            <input type="radio" name="selector1" id="r4">
+                            <input type="radio" name="selector1" id="r5">
+
+                            <div class="story-slide start1">
+                                <!-- Slide 1 -->
+                                <picture>
+                                    <source srcset="OurStory\Meeting\vertical_title.png" media="(max-width: 710px)">
+                                    <source srcset="OurStory\Meeting\horizontal_title.png">
+                                    <img src="OurStory\Meeting\vertical_title.png" alt="" class="story-pic">
+                                </picture>
+                            </div>
+                            <div class="story-slide">
+                                <!-- Slide 2 -->
+                                <picture>
+                                    <source srcset="OurStory\Meeting\before_we_met_vertical.png" media="(max-width: 710px)">
+                                    <source srcset="OurStory\Meeting\before_we_met_horizontal.png">
+                                    <img src="OurStory\Meeting\before_we_met_vertical.png" alt="" class="story-pic">
+                                </picture>
+                            </div>
+                            <div class="story-slide">
+                                <!-- Slide 3 -->
+                                <picture>
+                                    <source srcset="OurStory\Meeting\dance_invitation_vertical.png" media="(max-width: 710px)">
+                                    <source srcset="OurStory\Meeting\dance_invitation_horizontal.png">
+                                    <img src="OurStory\Meeting\dance_invitation_vertical.png" alt="" class="story-pic">
+                                </picture>
+                            </div>
+                            <div class="story-slide">
+                                <!-- Slide 4 -->
+                                <picture>
+                                    <source srcset="OurStory\Meeting\post_dance_vertical.png" media="(max-width: 710px)">
+                                    <source srcset="OurStory\Meeting\post_dance_horizontal.png">
+                                    <img src="OurStory\Meeting\post_dance_vertical.png" alt="" class="story-pic">
+                                </picture>
+                            </div>
+                            <div class="story-slide">
+                                <!-- Slide 5 -->
+                                <picture>
+                                    <source srcset="OurStory\Meeting\thank_you_vertical.png" media="(max-width: 710px)">
+                                    <source srcset="OurStory\Meeting\thank_you_horizontal.png">
+                                    <img src="OurStory\Meeting\thank_you_vertical.png" alt="" class="story-pic">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="story-nav">
+                            <label for="r1" class="bar" id="bar1" onclick="pulseWhite(1)"></label>
+                            <label for="r2" class="bar" id="bar2" onclick="pulseWhite(2)"></label>
+                            <label for="r3" class="bar" id="bar3" onclick="pulseWhite(3)"></label>
+                            <label for="r4" class="bar" id="bar4" onclick="pulseWhite(4)"></label>
+                            <label for="r5" class="bar" id="bar5" onclick="pulseWhite(5)"></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-divider" style="background-image: linear-gradient(#f3c472,rgb(249, 225.5, 134), #ffff9a)"></div>
+                
+                <div class="dating">
+                    <div class="story-container">
+                        <div class="story-slides">
+                            <input type="radio" name="selector2" id="r6" checked>
+                            <input type="radio" name="selector2" id="r7">
+                            <input type="radio" name="selector2" id="r8">
+                            <input type="radio" name="selector2" id="r9">
+                            <input type="radio" name="selector2" id="r10">
+
+                            <div class="story-slide start2">
+                                <!-- Slide 1 -->
+                                <picture>
+                                    <source srcset="OurStory\Dating\vertical_title.png" media="(max-width: 710px)">
+                                    <source srcset="OurStory\Dating\horizontal_title.png">
+                                    <img src="OurStory\Dating\vertical_title.png" alt="" class="story-pic">
+                                </picture>
+                            </div>
+                            <div class="story-slide">
+                                <!-- Slide 2 -->
+                                <picture>
+                                    <source srcset="OurStory\Dating\p2_vert.png" media="(max-width: 710px)">
+                                    <source srcset="OurStory\Dating\p2.png">
+                                    <img src="OurStory\p2_tall.jpg" alt="" class="story-pic">
+                                </picture>
+                            </div>
+                            <div class="story-slide">
+                                <!-- Slide 3 -->
+                                <picture>
+                                    <source srcset="OurStory\Dating\p3_vert.png" media="(max-width: 710px)">
+                                    <source srcset="OurStory\Dating\p3.png">
+                                    <img src="OurStory\Dating\p3_vert.png" alt="" class="story-pic">
+                                </picture>
+                            </div>
+                            <div class="story-slide">
+                                <!-- Slide 4 -->
+                                <picture>
+                                    <source srcset="OurStory\Dating\p4_vert.png" media="(max-width: 710px)">
+                                    <source srcset="OurStory\Dating\p4.png">
+                                    <img src="OurStory\Dating\p4_vert.png" alt="" class="story-pic">
+                                </picture>
+                            </div>
+                            <div class="story-slide">
+                                <!-- Slide 5 -->
+                                <picture>
+                                    <source srcset="OurStory\Dating\p5_vert.png" media="(max-width: 710px)">
+                                    <source srcset="OurStory\Dating\p5.png">
+                                    <img src="OurStory\Dating\p5_vert.png" alt="" class="story-pic">
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div class="story-nav">
+                            <label for="r6" class="bar" id="bar6" onclick="pulseWhite(6)"></label>
+                            <label for="r7" class="bar" id="bar7" onclick="pulseWhite(7)"></label>
+                            <label for="r8" class="bar" id="bar8" onclick="pulseWhite(8)"></label>
+                            <label for="r9" class="bar" id="bar9" onclick="pulseWhite(9)"></label>
+                            <label for="r10" class="bar" id="bar10" onclick="pulseWhite(10)"></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-divider" style="background-image: linear-gradient(#ffff9a, rgb(251.5, 229, 163.5), #f8cbad)"></div>
+                
+                <div class="engaged">
+                    <div class="story-container">
+                        <div class="story-slides" style="width: 700%;">
+                            <input type="radio" name="selector3" id="r11" checked>
+                            <input type="radio" name="selector3" id="r12">
+                            <input type="radio" name="selector3" id="r13">
+                            <input type="radio" name="selector3" id="r14">
+                            <input type="radio" name="selector3" id="r15">
+                            <input type="radio" name="selector3" id="r16">
+                            <input type="radio" name="selector3" id="r17">
+
+                            <div class="story-slide start3" style="width: 14.285714285714286%">
+                                <!-- Slide 1 -->
+                                <picture>
+                                    <source srcset="OurStory\Engaged\vertical_title.png" media="(max-width: 710px)">
+                                    <source srcset="OurStory\Engaged\horizontal_title.png">
+                                    <img src="OurStory\Engaged\vertical_title.png" alt="" class="story-pic">
+                                </picture>
+                            </div>
+                            <div class="story-slide" style="width: 14.285714285714286%">
+                                <!-- Slide 2 -->
+                                <picture>
+                                    <source srcset="OurStory\Engaged\p2_tall.png" media="(max-width: 710px)">
+                                    <source srcset="OurStory\Engaged\p2.png">
+                                    <img src="OurStory\Engaged\p2_tall.png" alt="" class="story-pic">
+                                </picture>
+                            </div>
+                            <div class="story-slide" style="width: 14.285714285714286%">
+                                <!-- Slide 3 -->
+                                <picture>
+                                    <source srcset="OurStory\Engaged\p3_tall.png" media="(max-width: 710px)">
+                                    <source srcset="OurStory\Engaged\p3.png">
+                                    <img src="OurStory\Engaged\p3_tall.png" alt="" class="story-pic">
+                                </picture>
+                            </div>
+                            <div class="story-slide" style="width: 14.285714285714286%">
+                                <!-- Slide 4 -->
+                                <picture>
+                                    <source srcset="OurStory\Engaged\p4_tall.png" media="(max-width: 710px)">
+                                    <source srcset="OurStory\Engaged\p4.png">
+                                    <img src="OurStory\Engaged\p4_tall.png" alt="" class="story-pic">
+                                </picture>
+                            </div>
+                            <div class="story-slide" style="width: 14.285714285714286%">
+                                <!-- Slide 5 -->
+                                <picture>
+                                    <source srcset="OurStory\Engaged\p5_tall.png" media="(max-width: 710px)">
+                                    <source srcset="OurStory\Engaged\p5.png">
+                                    <img src="OurStory\Engaged\p5_tall.png" alt="" class="story-pic">
+                                </picture>
+                            </div>
+                            <div class="story-slide" style="width: 14.285714285714286%">
+                                <!-- Slide 6 -->
+                                <picture>
+                                    <source srcset="OurStory\Engaged\p6_tall.png" media="(max-width: 710px)">
+                                    <source srcset="OurStory\\Engaged\p6.png">
+                                    <img src="OurStory\Engaged\p6_tall.png" alt="" class="story-pic">
+                                </picture>
+                            </div>
+                            <div class="story-slide" style="width: 14.285714285714286%">
+                                <!-- Slide 7 -->
+                                <picture>
+                                    <source srcset="OurStory\Engaged\p7_tall.png" media="(max-width: 710px)">
+                                    <source srcset="OurStory\Engaged\p7.png">
+                                    <img src="OurStory\Engaged\p7_tall.png" alt="" class="story-pic">
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div class="story-nav">
+                            <label for="r11" class="bar" id="bar11" onclick="pulseWhite(11)"></label>
+                            <label for="r12" class="bar" id="bar12" onclick="pulseWhite(12)"></label>
+                            <label for="r13" class="bar" id="bar13" onclick="pulseWhite(13)"></label>
+                            <label for="r14" class="bar" id="bar14" onclick="pulseWhite(14)"></label>
+                            <label for="r15" class="bar" id="bar15" onclick="pulseWhite(15)"></label>
+                            <label for="r16" class="bar" id="bar16" onclick="pulseWhite(16)"></label>
+                            <label for="r17" class="bar" id="bar17" onclick="pulseWhite(17)"></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-divider" style="background-image: linear-gradient(#f8cbad, rgb(251.5, 229, 214), white)"></div>
+            </div>
+
+            <div class="ede-container">
+                <h1>About Ede</h1>
+                <p>
+                    Ever since I was a little girl, I have found so much joy through dancing. Whether it is competitive dance or country line dancing, I LOVE to dance. In fact, my nickname is Miss Happy Feet since I am always moving my feet.
+                </p>
+                <p>
+                    I am the loudest and proudest member of the fightin’ Texas Aggies class of 2023! I will be receiving my bachelor’s degree in Health with a concentration in Allied Health. The reason I chose this degree is for the purpose of building a strong foundation for optometry school. In approximately eight years I will have the title as a Doctor of Optometry. I chose this profession for the purpose of the mission God has put on my heart to establish a clinic that will improve the Zambian natives’ vision, and the inspiration from Jesus healing the blind. I want people to see God and the beauty of the world around them.
+                </p>
+            </div>
+
+            <div class="luke-container">
+                <h1>About Luke</h1>
+                <p>
+                    My priorities growing up were God, family, school, and sports. I pushed myself academically and in the sports I played: football, baseball, and basketball. Once I reached high school, I played football and raced in triathlons. In high school, I also found a love for building things, especially projects that included LED's.
+                </p>
+                <p>
+                    I was born bleeding maroon and thus became a student at Texas A&M University. I am a computer science major with a minor in embedded systems integration. I chose this path to pursue more complicated projects and learn how computers work from the ground up. I will use this degree to serve underdeveloped countries by advancing their knowledge and use of technology. Before that mission, I will serve in the United States Marine Corps. I am a candidate in the Marine Officers Program in College Station and will attend Officers Candidates School in Quantico, Virginia during the summers of 2021 and 2022. I will commission once I graduate in December 2022 and serve the country that has blessed me dearly.
+                </p>
+            </div>
+        </main>
+
+        <!-- Begin Scripts -->
+        <script src="OurStory\app.js"></script>
+        <!-- End Scripts -->
+    </body>
+</html>

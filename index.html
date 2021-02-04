@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="title" content="Lukede's Wedding">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="hamburger.css">  <!-- Copied hamburger menu icon from https://css-tricks.com/line-animated-hamburger-menu -->
+        <link rel="stylesheet" href="dropdown.css">
+    </head>
+    <body>
+        <nav>
+            <div class="navBlock" style="position: relative; top: -8%;">
+                <!-- Snagged from the website listed above -->
+                <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')); document.getElementById('dropdownMenu').classList.toggle('show');" aria-label="Main Menu">
+                    <svg class="hamburguesa" viewBox="0 0 100 100">
+                        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+                <div id="dropdownMenu" class="dropdown-content">
+                    <a href="rsvp.html">RSVP</a>
+                    <div class="menuDivider"></div>
+                    <a href="ourStory.html">Our Story</a>
+                    <div class="menuDivider"></div>
+                    <a href="ourWhy.html">Our Why</a>
+                    <div class="menuDivider"></div>
+                    <a href="weddingParty.html">Wedding Party</a>
+                    <div class="menuDivider"></div>
+                    <a href="registry.html">Registry</a>
+                    <div class="menuDivider"></div>
+                    <a href="pictures.html">Pictures</a>
+                </div>
+            </div>
+
+            <div class="navBlock">Luke and Ede</div>
+
+            <div class="navBlock">
+                <a href="index.html"><img src="twoRings.svg" class="homeLogo""/></a>
+            </div>
+        </nav>
+
+        <div style="height:4vh"></div>
+
+        <main>
+            <picture>
+                <source srcset="lukedeTall.JPG" media="(max-width: 780px)">
+                <source srcset="lukedeWide.JPG">
+                <img src="lukedeTall.JPG" alt="Lukede" style="max-width: 100%; max-height:70vh; border-radius: 10%; border: rgb(234, 200, 123) 2vw solid;">
+            </picture>
+
+            <div class="countDown">
+                <text><span id="daysLeft">23</span> days remaining!</text>
+            </div>
+
+        </main>
+
+        <div style="height:4vh"></div>
+
+        <div class="bottom">
+            <p class="bottomTxt">
+                Please join us for our wedding celebration on April 18th, 2021 at The Carriage House
+            </p>
+        </div>
+
+        <div style="height:4vh"></div>
+
+        <div class="intro">
+            <div class="intro-text">
+                <h1 class="hide">
+                    <span class="text">You're Invited</span>
+                </h1>
+                <h1 class="hide">
+                    <span class="text">To Lukede's</span>
+                </h1>
+                <h1 class="hide">
+                    <span class="text">Wedding!</span>
+                </h1>
+            </div>
+        </div>
+
+        <div class="slider"></div>
+
+        <!-- Add scripts -->
+        <script>
+            // Get the time until wedding date in days
+            const weddingDate = new Date(2021, 3, 18);
+            var timeUntil = weddingDate - Date.now();
+            if (timeUntil < 0) {
+                document.getElementById("daysLeft").innerHTML = 0;
+            } else {
+                timeUntil /= 1000;  // Seconds
+                timeUntil /= 60;  // Minutes
+                timeUntil /= 60;  // Hours
+                timeUntil /= 24;  // Days
+                document.getElementById("daysLeft").innerHTML = Math.ceil(timeUntil);
+            }
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+
+        <script src="landing.js"></script>
+        <!-- End Scripts -->
+
+    </body>
+</html>

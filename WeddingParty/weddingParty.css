@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Parisienne&display=swap');
+
+body {
+    margin: 0;
+}
+
+nav {
+    height: 10vh;
+    min-height: 50px;
+    background-color: antiquewhite;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns:  1fr 3fr 1fr;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navBlock {
+    justify-self: center;
+    color: black;
+    font-family: Parisienne, "Times New Roman";
+    font-size: 8vh;
+    font-weight: bold;
+}
+
+.homeLogo {
+    height: 9vh;
+    width: 9vh;
+}
+
+input[name="selector"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+main {
+    z-index: 0;
+    overflow: hidden;
+}
+
+.selector-labels {
+    width: 100%;
+    height: 5vh;
+    z-index: 0;
+    display: flex;
+}
+
+.label1 {
+    background-color: white;
+    color: black;
+    width: 50%;
+    position: relative;
+    font-size: 1.25em;
+}
+
+.label2 {
+    background-color: black;
+    color: white;
+    width: 50%;
+    position: relative;
+    font-size: 1.25em;
+}
+
+.middle {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.slide-container {
+    width: 100%;
+    display: flex;
+    z-index: -1;
+}
+
+.left-column {
+    width: 50%;
+    height: 362vh;
+    background-color: white;
+    z-index: -1;
+    transition: 0.75s;
+}
+
+.right-column {
+    width: 50%;
+    height: 362vh;
+    background-color: black;
+    z-index: -1;
+    transition: 0.75s;
+}
+
+.bMaid {
+    position: relative;
+}
+
+.gMan {
+    position: relative;
+}
+
+.party-img {
+    height: 90vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h3 {
+    display: block;
+    position: absolute;
+    bottom: 7.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    box-shadow: 0px 0px 20px white;
+    padding: 1vh;
+}
+
+.gMan h3 {
+    background-color: black;
+    box-shadow: 0px 0px 20px black;
+    color: white;
+}
+
+/* Use a media query to add a breakpoint at 710px: */
+@media screen and (max-width: 710px) {
+    nav {
+        height: 50px;
+    }
+
+    .navBlock {
+        font-size: 1.75em;
+    }
+
+    .homeLogo {
+        height: 45px;
+        width: 45px;
+    }
+
+    .slide-container {
+        width: 200%;
+    }
+
+    .party-selector {
+        cursor: pointer;
+    }
+
+    #bMaids:checked ~ .slide-container .start {
+        margin-left: 0;
+    }
+    
+    #gMen:checked ~ .slide-container .start {
+        margin-left: -50%;
+    }
+
+    .left-column {
+        height: 374vh;
+    }
+
+    .right-column {
+        height: 374vh;
+    }
+
+    .party-img {
+        height: 93vh;
+    }
+}

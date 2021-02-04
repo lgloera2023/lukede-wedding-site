@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Parisienne&display=swap');
+
+body {
+    margin: 0;
+}
+
+main {
+    position: relative;
+}
+
+nav {
+    height: 10vh;
+    min-height: 50px;
+    background-color: antiquewhite;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns:  1fr 3fr 1fr;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+
+.navBlock {
+    justify-self: center;
+    color: black;
+    font-family: Parisienne, "Times New Roman";
+    font-size: 8vh;
+    font-weight: bold;
+}
+
+.homeLogo {
+    height: 9vh;
+    width: 9vh;
+}
+
+.lukede-container {
+    background: white;
+}
+
+.meeting {
+    height: 90vh;
+    background: white;
+}
+
+.dating {
+    height: 90vh;
+    background: white;
+}
+
+.engaged {
+    height: 90vh;
+    background: white;
+}
+
+.story-divider {
+    height: 10vh;
+    width: 100vw;
+    display: none;
+}
+
+.ede-container {
+    margin-bottom: 10vh;
+}
+
+.ede-container h1, .luke-container h1 {
+    text-align: center;
+}
+
+.ede-container p, .luke-container p {
+    text-indent: 30pt;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    text-align: left;
+    font-size: 1.35em;
+}
+
+/* Use a media query to add a breakpoint at 710px: */
+@media screen and (max-width: 710px) {
+    nav {
+        height: 50px;
+    }
+
+    .navBlock {
+        font-size: 1.75em;
+    }
+
+    .homeLogo {
+        height: 45px;
+        width: 45px;
+    }
+
+    .meeting {
+        height: 93vh;
+    }
+
+    .dating {
+        height: 93vh;
+    }
+
+    .engaged {
+        height: 93vh;
+    }
+
+    .story-divider {
+        display: block;
+    }
+}
+
+
+

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Parisienne&display=swap');
+
+body {
+    margin: 0;
+    background-image: url("landingBackground.jpg");
+    background-size: 100%;
+}
+
+nav {
+    height: 10vh;
+    min-height: 50px;
+    background-color: antiquewhite;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns:  1fr 3fr 1fr;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navBlock {
+    justify-self: center;
+    color: black;
+    font-family: Parisienne, "Times New Roman";
+    font-size: 8vh;
+    font-weight: bold;
+}
+
+.homeLogo {
+    height: 9vh;
+    width: 9vh;
+}
+
+main {
+    display:flex;
+    justify-content: center;
+    position: relative;
+}
+
+.bottom {
+    background-color: white;
+    border-style: double;
+    border-width: 1.5vw;
+    border-color: goldenrod;
+    width: 86vw;
+    min-height: 20px;
+    position: relative;
+    left: 5vw;
+    text-align: center;
+    z-index: -1;
+}
+
+.bottomTxt {
+    color: goldenrod;
+    font-size: 3.5vh;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.countDown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translate(-100%,50%);
+    height: 20vh;
+    min-height: 50px;
+    width: 20vh;
+    min-width: 50px;
+    border-radius: 50%;
+    background-image: radial-gradient(white, rgb(234, 200, 123));
+    box-shadow: 0px 0px 3vh rgb(234, 200, 123);
+    z-index: 0;
+    text-align: center;
+}
+
+.countDown text {
+    color: rgb(139, 108, 33);
+    display: inline-block;
+    font-size: 4vh;
+}
+
+.intro {
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text {
+    font-size: 3rem;
+}
+
+.hide {
+    background: white;
+    overflow: hidden;
+}
+.hide span {
+    display: inline-block;
+    transform: translateY(100%);
+}
+
+.slider {
+    background: goldenrod;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    transform: translateY(100%);
+}
+
+/* Use a media query to add a breakpoint at 710px: */
+@media only screen and (max-width: 710px) {
+    nav {
+        height: 50px;
+    }
+
+    .navBlock {
+        font-size: 1.75em;
+    }
+
+    .homeLogo {
+        height: 45px;
+        width: 45px;
+    }
+
+    .bottomTxt {
+        font-size: 1.5em;
+    }
+
+    .intro-text {
+        font-size: 2rem;
+    }
+}
+
+/* Use a separate media query for the breakpoint of the picture for the countdown */
+@media only screen and (max-width: 780px) {
+    .countDown {
+        left: 50%;
+        transform: translate(-50%, 25%);
+        height: 150px;
+        width: 150px;
+    }
+
+    .countDown text {
+        font-size: 1.75em;
+    }
+    
+}

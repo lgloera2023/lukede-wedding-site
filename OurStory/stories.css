@@ -1,0 +1,150 @@
+.story-container {
+    width: 945px;
+    height: 540px;
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.story-nav {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+    z-index: 1;
+}
+
+.bar {
+    width: 50px;
+    height: 10px;
+    border: 2px solid black;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.bar:hover {
+    background: black;
+}
+
+.white-bar {
+    background: black;
+}
+
+input[name="selector1"] {
+    position: absolute;
+    visibility: hidden;
+}
+input[name="selector2"] {
+    position: absolute;
+    visibility: hidden;
+}
+input[name="selector3"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.story-slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+    z-index: 0;
+}
+
+.story-slide {
+    width: 20%;
+    transition: 0.75s;
+    z-index: 0;
+}
+
+.story-pic {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+#r1:checked ~ .start1 {
+    margin-left: 0;
+}
+
+#r2:checked ~ .start1 {
+    margin-left: -20%;
+}
+
+#r3:checked ~ .start1 {
+    margin-left: -40%;
+}
+
+#r4:checked ~ .start1 {
+    margin-left: -60%;
+}
+
+#r5:checked ~ .start1 {
+    margin-left: -80%;
+}
+
+#r6:checked ~ .start2 {
+    margin-left: 0;
+}
+
+#r7:checked ~ .start2 {
+    margin-left: -20%;
+}
+
+#r8:checked ~ .start2 {
+    margin-left: -40%;
+}
+
+#r9:checked ~ .start2 {
+    margin-left: -60%;
+}
+
+#r10:checked ~ .start2 {
+    margin-left: -80%;
+}
+
+#r11:checked ~ .start3 {
+    margin-left: 0;
+}
+
+#r12:checked ~ .start3 {
+    margin-left: -14.285714285714286%;
+}
+
+#r13:checked ~ .start3 {
+    margin-left: -28.571428571428573%;
+}
+
+#r14:checked ~ .start3 {
+    margin-left: -42.857142857142854%;
+}
+
+#r15:checked ~ .start3 {
+    margin-left: -57.142857142857146%;
+}
+
+#r16:checked ~ .start3 {
+    margin-left: -71.42857142857143%;
+}
+
+#r17:checked ~ .start3 {
+    margin-left: -85.71428571428571%;
+}
+
+@media screen and (max-width: 710px) {
+    .story-container {
+        width: 100vw;
+        height: 93vh;
+        top: 0;
+        left: 0;
+        transform: translate(0%,0%);
+    }
+
+    .bar {
+        height: 20px;
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="title" content="Pictures">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Pictures\pictures.css">
+        <link rel="stylesheet" href="hamburger.css">  <!-- Copied hamburger menu icon from https://css-tricks.com/line-animated-hamburger-menu -->
+        <link rel="stylesheet" href="dropdown.css">
+    </head>
+    <body>
+        <nav>
+            <div class="navBlock" style="position: relative; top: -8%;">
+                <!-- Snagged from the website listed above -->
+                <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')); document.getElementById('dropdownMenu').classList.toggle('show');" aria-label="Main Menu">
+                    <svg class="hamburguesa" viewBox="0 0 100 100">
+                        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+                <div id="dropdownMenu" class="dropdown-content">
+                    <a href="rsvp.html">RSVP</a>
+                    <div class="menuDivider"></div>
+                    <a href="ourStory.html">Our Story</a>
+                    <div class="menuDivider"></div>
+                    <a href="ourWhy.html">Our Why</a>
+                    <div class="menuDivider"></div>
+                    <a href="weddingParty.html">Wedding Party</a>
+                    <div class="menuDivider"></div>
+                    <a href="registry.html">Registry</a>
+                    <div class="menuDivider"></div>
+                    <a href="pictures.html">Pictures</a>
+                </div>
+            </div>
+
+            <div class="navBlock">Luke and Ede</div>
+
+            <div class="navBlock">
+                <a href="index.html"><img src="twoRings.svg" class="homeLogo"/></a>
+            </div>
+        </nav>
+
+        <div class="share-pics">
+            <p>
+                If you take any pictures at the wedding, please email them to <a href="mailto:emailTheLoeras@gmail.com?Subject=Guest%20Wedding%20Pictures" target="_blank">emailTheLoeras@gmail.com</a>
+            </p>
+        </div>
+
+        <div class="engagement-photos-ad">
+            <span id="L1">E</span>
+            <span id="L2">N</span>
+            <span id="L3">G</span>
+            <span id="L4">A</span>
+            <span id="L5">G</span>
+            <span id="L6">E</span>
+            <span id="L7">M</span>
+            <span id="L8">E</span>
+            <span id="L9">N</span>
+            <span id="L10">T</span>
+            <span></span>
+            <span id="L11">P</span>
+            <span id="L12">H</span>
+            <span id="L13">O</span>
+            <span id="L14">T</span>
+            <span id="L15">O</span>
+            <span id="L16">S</span>
+
+            <div class="line-break"></div>
+        </div>
+
+        <div class="engagement-photos">
+            <picture>
+                    <source srcset="Pictures/coming-soon-vert.png" media="(max-width: 780px)">
+                    <source srcset="Pictures/coming-soon.png">
+                    <img src="Pictures/coming-soon-vert.png" alt="Coming Soon" style="max-width:100%; max-height:90%; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);">
+            </picture>
+        </div>
+
+    </body>
+
+    <!-- Begin Scripts -->
+    <script src="Pictures/app.js"></script>
+    <!-- End Scripts -->
+
+</html>

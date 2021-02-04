@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Parisienne&display=swap');
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background: linear-gradient(antiquewhite, white);
+}
+
+nav {
+    height: 10vh;
+    min-height: 50px;
+    background-color: antiquewhite;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns:  1fr 3fr 1fr;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navBlock {
+    justify-self: center;
+    color: black;
+    font-family: Parisienne, "Times New Roman";
+    font-size: 8vh;
+    font-weight: bold;
+}
+
+.homeLogo {
+    height: 9vh;
+    width: 9vh;
+}
+
+.share-pics {
+    height: 65vh;
+    width: 90vw;
+    text-align: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.share-pics p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3em;
+}
+
+.engagement-photos-ad {
+    width: 85vw;
+    height: 50vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(17, 1fr);
+    overflow-y: hidden;
+}
+
+.engagement-photos-ad span {
+    display: block;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#L1, #L2, #L3, #L4, #L5, #L6, #L7, #L8, #L9, #L10, #L11, #L12, #L13, #L14, #L15, #L16 {
+    position: relative;
+    top: -10%;
+}
+
+.line-break {
+    width: 95%;
+    height: 2px;
+    background-color: antiquewhite;
+    box-shadow: 0px 0px 5px black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    z-index: 0;
+}
+
+.engagement-photos {
+    height: 80vh;
+    width: 100vw;
+    position: relative;
+}
+
+/* Use a media query to add a breakpoint at 710px: */
+@media screen and (max-width: 710px) {
+    nav {
+        height: 50px;
+    }
+
+    .navBlock {
+        font-size: 1.75em;
+    }
+
+    .homeLogo {
+        height: 45px;
+        width: 45px;
+    }
+
+    .engagement-photos-ad span {
+        font-size: 1.5em;
+    }
+
+    p a {
+        font-size: 0.8em;
+    }
+}

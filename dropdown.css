@@ -1,0 +1,67 @@
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f1f1f1;
+    min-width: 310px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 4;
+    left: 0;
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.75em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 4;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+  
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/* Horizontal lines hidden by default and only present when using a vertical screen */
+.menuDivider {
+    width: 90%;
+    height: 2px;
+    background-color: black;
+    margin: 0;
+    position: absolute;
+    left: 3%;
+    display: none;
+}
+
+/* Use a media query to add a breakpoint at 710px: */
+@media screen and (max-width: 710px) {
+    .dropdown-content {
+        width: 100vw;
+        height: 100vh;
+        /*opacity: 90%;*/
+    }
+
+    .dropdown-content a {
+        font-size: 1.5em;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .menuDivider {
+        display: block;
+    }
+}
+
