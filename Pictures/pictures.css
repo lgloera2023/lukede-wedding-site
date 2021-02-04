@@ -44,7 +44,7 @@ nav {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
 .engagement-photos-ad {
@@ -110,5 +110,12 @@ nav {
 
     p a {
         font-size: 0.8em;
+    }
+
+    .share-pics p {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 2em;
     }
 }

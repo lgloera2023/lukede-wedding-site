@@ -157,4 +157,7 @@ main {
         font-size: 1.6em;
     }
     
+    .intro-text {
+        font-size: 2rem;
+    }
 }
