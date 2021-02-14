@@ -47,7 +47,8 @@
 /* Use a media query to add a breakpoint at 710px: */
 @media screen and (max-width: 710px) {
     .dropdown {
-        display: block;
+        position: fixed;
+        top: 0;
     }
 
     .dropdown-content {
