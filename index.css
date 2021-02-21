@@ -11,7 +11,6 @@ nav {
     min-height: 50px;
     background-color: antiquewhite;
     display: grid;
-    justify-content: center;
     align-items: center;
     grid-template-columns:  1fr 3fr 1fr;
     position: sticky;
@@ -36,6 +35,7 @@ main {
     display:flex;
     justify-content: center;
     position: relative;
+    margin-top: 10vh;
 }
 
 .bottom {
@@ -131,6 +131,10 @@ main {
     .homeLogo {
         height: 45px;
         width: 45px;
+    }
+
+    main {
+        margin-top: 50px;
     }
 
     .bottomTxt {
