@@ -4,17 +4,18 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 nav {
     height: 10vh;
     min-height: 50px;
+    width: 100%;
     background-color: antiquewhite;
     display: grid;
-    justify-content: center;
     align-items: center;
     grid-template-columns:  1fr 3fr 1fr;
-    position: sticky;
+    position: fixed;
     top: 0;
 }
 
@@ -34,6 +35,7 @@ nav {
 .rsvp-form {
     width: 100vw;
     height: 90vh;
+    margin-top: 11vh;
 }
 
 /* Use a media query to add a breakpoint at 710px: */
@@ -49,5 +51,9 @@ nav {
     .homeLogo {
         height: 45px;
         width: 45px;
+    }
+
+    .rsvp-form {
+        margin-top: 50px;
     }
 }

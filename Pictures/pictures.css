@@ -9,12 +9,12 @@ body {
 nav {
     height: 10vh;
     min-height: 50px;
+    width: 100%;
     background-color: antiquewhite;
     display: grid;
-    justify-content: center;
     align-items: center;
     grid-template-columns:  1fr 3fr 1fr;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1;
 }

@@ -7,12 +7,12 @@ body {
 nav {
     height: 10vh;
     min-height: 50px;
+    width: 100%;
     background-color: antiquewhite;
     display: grid;
-    justify-content: center;
     align-items: center;
     grid-template-columns:  1fr 3fr 1fr;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1;
 }
@@ -38,6 +38,7 @@ input[name="selector"] {
 main {
     z-index: 0;
     overflow: hidden;
+    margin-top: 10vh;
 }
 
 .selector-labels {
@@ -138,6 +139,10 @@ h3 {
     .homeLogo {
         height: 45px;
         width: 45px;
+    }
+
+    main {
+        margin-top: 50px;
     }
 
     .slide-container {
