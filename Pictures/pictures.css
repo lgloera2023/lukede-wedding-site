@@ -52,7 +52,7 @@ nav {
     height: 50vh;
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -25%);
     display: grid;
     grid-template-columns: repeat(17, 1fr);
     overflow-y: hidden;
