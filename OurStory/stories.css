@@ -146,5 +146,6 @@ input[name="selector3"] {
 
     .bar {
         height: 20px;
+        width: 35px;
     }
 }

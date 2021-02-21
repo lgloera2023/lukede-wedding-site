@@ -78,7 +78,7 @@ main {
 .countDown text {
     color: rgb(139, 108, 33);
     display: inline-block;
-    font-size: 4vh;
+    font-size: 3.75vh;
 }
 
 .intro {
@@ -158,10 +158,10 @@ main {
     }
 
     .countDown text {
-        font-size: 25px;
+        font-size: 23px;
     }
     
     .intro-text {
-        font-size: 1.75rem;
+        font-size: 30px;
     }
 }

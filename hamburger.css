@@ -16,6 +16,7 @@
 .hamburguesa {
     height: 8vh;
     width: 8vh;
+    position: relative;
 }
 
 /* Use a media query to add a breakpoint at 710px: */
