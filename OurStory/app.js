@@ -7,7 +7,7 @@
  *************************************************************************/
 
 // Initial alert
-setTimeout(function() {alert("(HOW TO LOOK AT STORIES)\nScroll through the stories by clicking on the box outlines.");}, 500);
+setTimeout(function() {alert("(HOW TO LOOK AT STORIES)\nScroll through the stories by clicking on the box outlines.");}, 750);
 
 //////////////////////////////////////////////////////////////////////////
 // Pulse white
