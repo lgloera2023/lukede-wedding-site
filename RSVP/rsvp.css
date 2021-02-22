@@ -2,9 +2,7 @@
 
 body {
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 nav {
@@ -32,10 +30,18 @@ nav {
     width: 9vh;
 }
 
+.covid-policy {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 15vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-bottom: 5vh;
+}
+
 .rsvp-form {
     width: 100vw;
     height: 90vh;
-    margin-top: 11vh;
 }
 
 /* Use a media query to add a breakpoint at 710px: */
@@ -53,7 +59,10 @@ nav {
         width: 45px;
     }
 
-    .rsvp-form {
-        margin-top: 50px;
+    .covid-policy {
+        margin-top: 70px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 20px;
     }
 }
