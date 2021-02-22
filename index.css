@@ -140,10 +140,6 @@ main {
     .bottomTxt {
         font-size: 1.5em;
     }
-
-    .intro-text {
-        font-size: 2rem;
-    }
 }
 
 /* Use a separate media query for the breakpoint of the picture for the countdown */
@@ -158,7 +154,7 @@ main {
     }
 
     .countDown text {
-        font-size: 23px;
+        font-size: 22px;
     }
     
     .intro-text {
