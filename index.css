@@ -48,7 +48,6 @@ main {
     position: relative;
     left: 5vw;
     text-align: center;
-    z-index: -1;
 }
 
 .bottomTxt {
@@ -56,6 +55,11 @@ main {
     font-size: 3.5vh;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bottomTxt a {
+    color: goldenrod;
+    text-decoration: underline;
 }
 
 .countDown {
