@@ -84,9 +84,23 @@ nav {
 }
 
 .engagement-photos {
-    height: 80vh;
     width: 100vw;
     position: relative;
+}
+
+.engagement-photos img {
+    max-width:50%;
+    position:relative;
+    left:50%;
+    transform:translateX(-50%);
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+}
+
+.photographer {
+    font-size:1.5em;
+    margin-top:1.5vh;
+    margin-bottom:4vh
 }
 
 /* Use a media query to add a breakpoint at 710px: */
@@ -117,5 +131,16 @@ nav {
         top: 50%;
         transform: translateY(-50%);
         font-size: 2em;
+    }
+
+    .engagement-photos img {
+        max-width:100%;
+        margin-top: 0vh;
+        margin-bottom: 0vh;
+    }
+
+    .photographer {
+        margin-top:50vh;
+        margin-bottom:50vh;
     }
 }
